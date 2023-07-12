@@ -1,0 +1,44 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <title>To Do List</title>
+</head>
+
+<body>
+    <div class="container"><!-- Todo list body -->
+        <div class="todo-box">
+            <header class="heading">To Do List</header> <!-- Title of the to-do list -->
+            <div class="inputbox">
+                <i class="icon uil uil-file-check-alt"></i><!-- file icon  -->
+                <input type="text" placeholder="Type your To Do List"><!-- Input field to type tasks -->
+                <i id="addbutton" class="icon uil uil-plus"></i><!-- Add (plus) icon  -->
+            </div>
+            <div class="clckbutton">
+                <span class="btn clearall">Clear all task</span><!-- Button to clear all tasks -->
+                <span class="btn clearcomtask">Clear Complete</span><!-- Button to clear completed tasks -->
+            </div>
+            <hr><!-- Horizontal rule -->
+            <ul class="itemlist"></ul><!-- Empty unordered list to hold tasks -->
+            <hr><!-- Horizontal rule -->
+            <div class="clckbutton">
+                <span>
+                    <span class="pendingTasks"></span><!-- Empty span for task count -->
+                    tasks left</span><!-- Text to display the number of tasks left -->
+                <div>
+                    <span class="pendingTasks">All</span><!-- Button to show all tasks -->
+                    <span class="btn complete">Complete</span><!-- Button to show completed tasks -->
+                    <span class="btn uncomplete">Uncomplete</span><!-- Button to show uncompleted tasks -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script><!-- JavaScript file -->
+</body>
+
+</html>
